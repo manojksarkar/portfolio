@@ -1,6 +1,12 @@
+@font-face {
+    src: url("../fonts//Courgette-Regular.ttf");
+    font-family: courgette;
+}
+
 body{
     background-color:  #212529 !important;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -11,21 +17,32 @@ body{
 
 header{
     position: fixed;
-    /* background-color: chocolate !important; */
     background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
-    /* color: aliceblue !important; */
     margin: 5vh 5vw;
     border-radius: 6px;
-    padding: 10vw;
-    padding-top: 5vh;
-    padding-bottom: 0;
-    min-height: 65vh;
-    font-size: larger;
+    padding: 5vh 10vw;
+    height: 500px;
     text-align: start;
 }
 
-h1{
+.logo{
+    border-bottom: 5px solid #540e57;
+    width: 10%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.intro{
+    font-size: 60px;
+    font-family: courgette;
+    padding: 10px 0;
     font-weight: bolder;
+}
+
+header p{
+    padding: 10px 0;
+    font-size: larger;
+    letter-spacing: 0.03rem;
 }
 
 
@@ -40,8 +57,12 @@ a{
 }
 
 .icon{
-    font-size: 2rem;
+    font-size: 3rem;
     text-decoration: none;
+}
+
+.icon:hover{
+    color: snow;
 }
 
 
@@ -49,12 +70,21 @@ a{
 /*////////////////////////// Main Section ////////////////////////*/
 
 .main-section{
-    color: snow;
-    padding: 60vh 5vw 0;
+    padding: 500px 5vw 0;
 }
 
 .resume{
     flex: 0 0 35%;
+    text-align: start;
+}
+
+.same-line{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+ul{
+    padding-left: 0;
 }
 
 .project{
@@ -69,20 +99,6 @@ a{
     background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
     z-index: 1;
     border-radius: 4px 0 4px 0;
-}
-
-.resume-item{
-    padding: 2vw;
-}
-
-.resume-item:nth-child(odd){
-    background-color: snow;
-    color: #212529;
-}
-
-.resume-item:nth-child(even){
-    background-color: #212529;
-    color: snow;
 }
 
 .project-item{
@@ -155,7 +171,7 @@ a{
 
 @media (max-width: 600px){
     header{
-        padding-top: 10vh;
+        padding-top: 5vh;
         position: absolute;
     }
     .header-image{
@@ -168,7 +184,7 @@ a{
 /*///////////////////////////// Footer ////////////////////////*/
 
 footer{
-    padding: 20px 0;
+    padding: 50px 0 0;
     color: snow;
 }
 
