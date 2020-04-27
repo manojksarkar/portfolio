@@ -1,0 +1,99 @@
+body{
+    background-color:  #212529 !important;
+    text-align: center;
+}
+
+
+
+
+
+/*////////////////////////// Header Section ////////////////////////*/
+
+header{
+    position: fixed;
+    /* background-color: chocolate !important; */
+    background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
+    color: aliceblue !important;
+    margin: 5vh 5vw;
+    border-radius: 6px;
+    padding: 2vh 2vw;
+    padding-bottom: 0;
+    min-height: 60vh;
+}
+
+.header-image{
+    width: 70%;
+}
+
+a{
+    text-decoration: none;
+    color: #212529;
+    margin: 0 10px;
+}
+
+.icon{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+
+/*////////////////////////// Main Section ////////////////////////*/
+
+.main-section{
+    color: aliceblue;
+    /* padding: 0 10vw; */
+    padding-top: 60vh;
+    margin: 0;
+}
+
+.resume{
+    flex: 0 0 40%;
+}
+
+.projects{
+    flex: 0 0 60%;
+}
+
+.resume div,
+.projects div{
+    padding: 2vw;
+}
+
+.resume div:nth-child(even){
+    background-color: snow;
+    color: #212529;
+}
+
+.resume div:nth-child(odd),
+.projects div{
+    background-color: #212529;
+    color: snow;
+}
+
+
+
+@media (max-width: 1000px){
+    .projects{
+        width: 80vw;
+        flex: none;
+    }
+
+    .resume{
+        width: 80vw;
+        flex: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 600px){
+    header{
+        padding-top: 20vh;
+    }
+    .header-image{
+        display: none;
+    }
+}
