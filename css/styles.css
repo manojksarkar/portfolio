@@ -18,7 +18,7 @@ header{
     background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
     margin: 4vh 4vw;
     border-radius: 6px;
-    padding: 5vh 10vw;
+    padding: 4vh 10vw;
     height: 550px;
     text-align: start;
 }
@@ -33,7 +33,8 @@ button{
 }
 
 button:hover{
-    background-image: linear-gradient(to bottom right, #ff935c, #da2d2d);
+    background-image: none;
+    background-color: #343a40 !important;
 }
 
 .header-left{
@@ -74,6 +75,7 @@ a{
 .icon{
     font-size: 3rem;
     text-decoration: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .icon:hover{
@@ -117,8 +119,8 @@ ul{
     left: 50%;
     padding: 8px 20px 2px;
     top: -20px;
-    background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
     z-index: 1;
+    background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
     border-radius: 4px 0 4px 0;
 }
 
@@ -155,27 +157,27 @@ ul{
 }
 
 .project-icon{
+    
     background-image: linear-gradient(to bottom right, #ff935c, #da2d2d);
     height: 3rem;
     width: 3rem;
     font-size: 1.5rem;
     border-radius: 50%;
-    color: snow;
+    color: #343a40;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .project-icon:hover{
     width: fit-content;
     min-width: 3rem;
     padding: .75rem;
-    color: #212529;
+    color: #343a40;
     border-radius: 1.5rem;
-    background-color: #ff935c;
-    background-image: none;
     text-decoration: none;
 }
 
@@ -196,7 +198,8 @@ ul{
 }
 
 .project-item:hover .description-box{
-    background-image: linear-gradient(to bottom right, #ff935c, #da2d2d);
+    /* background-image: linear-gradient(to bottom right, #ff935c, #da2d2d); */
+    background-color: #ff935c;
     color: #212529;
     height: 20%;
     transform: scale(1.1);
@@ -213,6 +216,17 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project-footer button{
+    background-color: #343a40 !important;
+    background-image: none;
+    color: #ff935c;
+}
+
+.project-footer button:hover{
+    background-image: linear-gradient(to bottom right, #da2d2d, #ff935c);
+    color: #343a40;
 }
 
 
@@ -248,7 +262,7 @@ ul{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     header{
         padding-top: 5vh;
         position: absolute;
@@ -266,6 +280,3 @@ footer{
     padding: 50px 0 0;
     color: snow;
 }
-
-
-
