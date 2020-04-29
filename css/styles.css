@@ -3,13 +3,25 @@
     font-family: courgette;
 }
 
+@font-face {
+    src: url("../fonts/BalooPaaji2-Regular.ttf");
+    font-family: baloopaji-reg;
+}
+
+@font-face {
+    src: url("../fonts/BalooPaaji2-SemiBold.ttf");
+    font-family: baloopaji-sb;
+}
+
 body{
     background-color:  #212529 !important;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: baloopaji-reg;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: baloopaji-sb;
+}
 
 /*////////////////////////// Header Section ////////////////////////*/
 
