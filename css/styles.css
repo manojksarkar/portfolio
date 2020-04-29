@@ -16,7 +16,7 @@ body{
 header{
     position: fixed;
     background-image: linear-gradient(to bottom right, #ff935c,#da2d2d) !important;
-    margin: 5vh 5vw;
+    margin: 4vh 4vw;
     border-radius: 6px;
     padding: 5vh 10vw;
     height: 550px;
@@ -145,13 +145,45 @@ ul{
     transition: all .2s;
 }
 
-.description-icon{
-    position: relative;
-    top: -100px;
+.project-icons{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.project-icon{
+    background-image: linear-gradient(to bottom right, #ff935c, #da2d2d);
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
     border-radius: 50%;
-    font-size: 3rem;
+    color: snow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.project-icon:hover{
+    width: fit-content;
+    min-width: 3rem;
+    padding: .75rem;
+    color: #212529;
+    border-radius: 1.5rem;
+    background-color: #ff935c;
+    background-image: none;
     text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
+}
+
+.hidden{
+    display: none;
+}
+.project-icon:hover .hidden{
+    display: inline-block;
 }
 
 .project-item:hover .project-image{
@@ -159,11 +191,16 @@ ul{
     transform: scale(1.1);
 }
 
+.project-item:hover .project-icons{
+    top: 60%;
+}
+
 .project-item:hover .description-box{
     background-image: linear-gradient(to bottom right, #ff935c, #da2d2d);
     color: #212529;
     height: 20%;
     transform: scale(1.1);
+    border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
