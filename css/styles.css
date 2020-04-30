@@ -33,20 +33,24 @@ header{
     padding: 4vh 10vw;
     height: 550px;
     text-align: start;
+    animation: shift-right 1.5s ease;
 }
 
 button{
     border-radius: 60px !important;
     background-image: linear-gradient(to bottom right, #da2d2d, #ff935c);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 5);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
     width: 200px;
     margin-top: 3vh !important;
     margin-bottom: 3vh !important;
+    font-family: baloopaji-sb;
+    font-size: x-large !important;
 }
 
 button:hover{
     background-image: none;
     background-color: #343a40 !important;
+    color: #ff935c !important;
 }
 
 .header-left{
@@ -87,11 +91,14 @@ a{
 .icon{
     font-size: 3rem;
     text-decoration: none;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    background-image: linear-gradient(to bottom, #ff925c00 80%, #212529 10%);
+    border-radius: 4px;
 }
 
 .icon:hover{
     color: #ff935c;
+    background-image: linear-gradient(to bottom, #ff925c00 80%, #ff935c 10%);
 }
 
 
@@ -105,6 +112,7 @@ ul{
 
 .main-section{
     padding: 550px 5vw 0;
+    animation: shift-down 1.5s ease;
 }
 
 .resume{
@@ -169,7 +177,7 @@ ul{
 }
 
 .project-icon{
-    
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
     background-image: linear-gradient(to bottom right, #ff935c, #da2d2d);
     height: 3rem;
     width: 3rem;
@@ -285,10 +293,38 @@ ul{
 }
 
 
-
 /*///////////////////////////// Footer ////////////////////////*/
 
 footer{
     padding: 50px 0 0;
     color: snow;
+}
+
+
+
+
+
+
+/*/////////////////////////// Animations ////////////////////////*/
+
+@keyframes shift-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-50vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+@keyframes shift-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-50vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0); 
+    }
 }
