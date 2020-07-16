@@ -32,7 +32,7 @@ header{
     border-radius: 6px;
     padding: 4vh 10vw;
     height: 550px;
-    text-align: start;
+    /* text-align: start; */
     animation: shift-right 1.5s ease;
 }
 
@@ -79,7 +79,7 @@ header p{
 
 
 .header-image{
-    width: 100%;
+    width: 50%;
 }
 
 a{
@@ -255,6 +255,11 @@ ul{
 
 
 @media (max-width: 1000px){
+
+    .header-image{
+        width: 80%;
+    }
+
     .project{
         width: 80vw;
         flex: none;
