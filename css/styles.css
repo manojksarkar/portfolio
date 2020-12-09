@@ -159,6 +159,7 @@ ul{
     padding: 8px 20px 2px;
     top: -20px;
     z-index: 1;
+    color: snow;
     background-image: linear-gradient(to bottom right, #5995fd,#273d5d) !important;
     border-radius: 4px 0 4px 0;
 }
