@@ -29,9 +29,9 @@ header{
     position: fixed;
     justify-content: space-between;
     background-image: linear-gradient(to bottom right, #5995fd, #273D5D) !important;
-    margin: 4vh 4vw 0 4vw;
+    margin: 3vh 3vw 0 3vw;
     border-radius: 6px;
-    padding: 4vh 0 50px 10vw;
+    padding: 3vh 0 50px 10vw;
     height: 550px;
     text-align: start;
     animation: shift-right 1.5s ease;
@@ -69,10 +69,14 @@ button:hover{
 }
 
 .logo{
-    border-bottom: 5px solid #540e57;
-    width: 10%;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    width: 18%;
+    padding-bottom: 6px;
+    border-bottom: solid 5px #273D5D;
+}
+
+.logo img{
+    width: 100%;
+    border-radius: 4px;
 }
 
 .intro{
@@ -130,7 +134,7 @@ ul{
 
 
 .main-section{
-    padding: 550px 5vw 0;
+    padding: 550px 2vw 0;
     animation: shift-down 1.5s ease;
 }
 
@@ -335,8 +339,8 @@ ul{
         font-size: medium !important;
     }
     header{
+        margin: 0;
         padding: 4vh 4vw !important;
-        position: absolute;
     }
     .icon{
         font-size: 2rem;
@@ -355,6 +359,9 @@ ul{
     .resume, .project{
         width: 100vw;
         margin: auto;
+    }
+    .project{
+        padding: 0;
     }
 }
 
