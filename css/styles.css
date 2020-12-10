@@ -111,7 +111,6 @@ a{
 
 .icon:hover{
     color: #5995fd;
-    border: solid 1px snow;
     background-image: linear-gradient(to bottom, #ff925c00 80%, #5995fd 10%);
 }
 
